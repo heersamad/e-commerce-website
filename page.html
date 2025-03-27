@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Products</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+
+    
+<header class="header" >
+    <nav class="navbar">
+        <img src="./logo-colored (1).svg" alt="" class="nav-logo" >
+        <div class="center">
+        <div class="search">
+            <input type="search" placeholder="Search">
+         <select class="drop-down">
+            <option value="All Categories" selected disabled>All Categories</option>
+            <option class="dropdown-item">Automobiles</option>
+            <option class="dropdown-item" >Clothes and wear</option>
+            <option class="dropdown-item">Home interiors</option>
+            <option class="dropdown-item">Computer and Tech</option>
+            <option class="dropdown-item">Tools, equipments</option>
+            <option class="dropdown-item">Sports and Outdoor</option>
+            <option class="dropdown-item">Animals and pets</option>
+            <option class="dropdown-item">Machinery Tools</option>
+            <option class="dropdown-item">More Category</option>
+         </select>
+            <button class="search-btn">Search</button>
+        </div>
+    </div> 
+
+        <ul class="nav-list">
+            <li class="nav-items"><a href="#" class="nav-link"><ion-icon name="person"></ion-icon><span>Profile</span></a></li>
+            <li class="nav-items"><a href="#" class="nav-link"><ion-icon name="document-text"></ion-icon><span>Message</span></a></li>
+            <li class="nav-items"><a href="#" class="nav-link"><ion-icon name="heart"></ion-icon><span>Orders</span></a></li>
+            <li class="nav-items"><a href="#" class="nav-link"><ion-icon name="cart"></ion-icon><span>Mycart</span></a></li>
+        </ul>
+    </nav>
+
+</header>
+
+    <div class="container">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <h3>Category</h3>
+            <ul id="category-list">
+                <li data-category="mobile-accessory">Mobile Accessory</li>
+                <li data-category="electronics">Electronics</li>
+                <li data-category="smartphones">Smartphones</li>
+            </ul>
+
+            <h3>Brands</h3>
+            <ul id="brand-list">
+                <li><input type="checkbox" data-brand="samsung"> Samsung</li>
+                <li><input type="checkbox" data-brand="apple"> Apple</li>
+                <li><input type="checkbox" data-brand="huawei"> Huawei</li>
+                <li><input type="checkbox" data-brand="poco"> Poco</li>
+            </ul>
+
+            <h3>Features</h3>
+            <ul>
+                <li><input type="checkbox"> Metallic</li>
+                <li><input type="checkbox"> Silicon Cover</li>
+                <li><input type="checkbox"> 8GB RAM</li>
+                <li><input type="checkbox"> Large Memory</li>
+            </ul>
+
+            <h3>Price Range</h3>
+            <input type="range" min="0" max="9999">
+            
+            <h3>Condition</h3>
+            <ul>
+                <li><input type="radio" name="condition"> Any</li>
+                <li><input type="radio" name="condition"> Refurbished</li>
+                <li><input type="radio" name="condition"> Brand New</li>
+            </ul>
+        </aside>
+  
+
+       <!-- Main Content -->
+       <main class="main-content">
+        <div class="top-bar">
+            <span>12,911 items in <strong>Mobile Accessory</strong></span>
+            <div class="filter-options">
+                <input type="checkbox"> Verified Only
+                <select>
+                    <option>Featured</option>
+                    <option>Best Selling</option>
+                    <option>Newest</option>
+                </select>
+            </div>
+        </div>
+
+
+        <!-- Product Grid -->
+        <main class="product-section">
+            <div id="product-list">
+                <!-- Products will be dynamically shown here -->
+                <div class="product-card">
+                    <img src="./3.jpg" alt="Canon Camera">
+                    <h4>Canon Camera EOS 2000</h4>
+                    <p class="price">$998.00 <span class="discount">$1128.00</span></p>
+                    <p class="rating">⭐⭐⭐ 3.5 | 154 orders | Free Shipping</p>
+                    <button class="view-details">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="./4.jpg" alt="GoPro Hero6">
+                    <h4>GoPro HERO6 4K Action Camera - Black</h4>
+                    <p class="price">$998.00</p>
+                    <p class="rating">⭐⭐⭐⭐ 4.5 | 154 orders | Free Shipping</p>
+                    <button class="view-details">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="./6.jpg" alt="iphone">
+                    <h4>IPhone 13 pro max - Black</h4>
+                    <p class="price">$998.00</p>
+                    <p class="rating">⭐⭐⭐⭐ 4.5 | 154 orders | Free Shipping</p>
+                    <button class="view-details">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="./5.jpg" alt="furniture">
+                    <h4>IPhone 13 pro max - Black</h4>
+                    <p class="price">$998.00</p>
+                    <p class="rating">⭐⭐⭐⭐ 4.5 | 200+ orders | Free Shipping</p>
+                    <button class="view-details">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="./7.jpg" alt="furniture">
+                    <h4>IPhone 13 pro max - Black</h4>
+                    <p class="price">$998.00</p>
+                    <p class="rating">⭐⭐⭐⭐ 4.5 | 200+ orders | Free Shipping</p>
+                    <button class="view-details">View Details</button>
+                </div>
+
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button>&laquo;</button>
+                <button class="page-btn" data-page="1">1</button>
+                <button class="page-btn" data-page="2"><a href="./page.html"></a>2</button>
+                <button class="page-btn" data-page="3">3</button>
+                <button>&raquo;</button>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+    
+            <div class="newsletter">
+                <h3>Subscribe on our newsletter</h3>
+                <p>Get daily news on upcoming offers from many Suppliers All over the World </p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+    
+    
+    
+    
+    <div class="footer-content">
+            <div class=" brand">
+                <img src="./logo-colored (1).svg" alt="Brand logo" class="brand-logo">
+                <p>Best information about the company goes here <br> but now lorem ispum is</p>
+                <div class="social-icons">
+               <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+               <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+               <a href="#"><ion-icon name="logo-linkedin"></ion-icon>
+               </a>
+               <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        
+    
+            <div class="footer-section links">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="# ">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Partnership</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+    
+  
+    
+            <div class="footer-section links">
+                <h3>For Users</h3>
+                <ul>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">My orders</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Get App</h3>
+             <img src="./Google_play.png" alt="app store">
+             <img src="./App_store.png" alt="Google play">
+            </div>
+        </div>
+    
+        
+        <div class="footer-bottom">
+            <p> &copy; 2023 Ecommerce</p>
+            <div class="language-selector">
+                <img src="./usa.png" alt="English">
+                <span>English</span>
+            </div>
+        </div>
+    
+        </div>
+    </footer> 
+
+    
+</body>
+<script src="app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
